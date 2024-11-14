@@ -28,5 +28,4 @@ public class Ej12 {
 		}
 		return array;
 	}
-	public static void imprimirConConmasArray(int[] array) {
 }

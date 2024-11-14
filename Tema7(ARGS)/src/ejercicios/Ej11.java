@@ -14,5 +14,5 @@ public class Ej11 {
 			System.out.println(i+" "+array[i]);
 		}
 	}
-
+	
 }
