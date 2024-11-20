@@ -9,9 +9,13 @@ public class Ej19 {
 	String[] v =fraseFila(frase);
 for (int i = 0; i <v.length; i++) {
 	String palabra="";
+	if(v[i].length()<3) {
+		palabra=v[i].toUpperCase();
+	}else {
 
 	palabra=v[i].substring(0, 3).toUpperCase();
 	palabra+=v[i].substring( 3).toLowerCase();
+	}
 	System.out.println(palabra);
 }
 
