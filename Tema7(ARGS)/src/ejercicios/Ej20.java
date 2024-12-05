@@ -1,6 +1,6 @@
 package ejercicios;
 
-import java.util.Iterator;
+
 import java.util.Scanner;
 
 public class Ej20 {
@@ -14,9 +14,11 @@ public class Ej20 {
 			Scanner sc = new Scanner(System.in);
 			System.out.println("Introduce una palabra");
 			palabra = sc.nextLine();
+			if(palabra.equalsIgnoreCase(fin))
+				break;
 			mostrarVocales(palabra);
 
-		} while (palabra.equalsIgnoreCase(fin));
+		} while (!(palabra.equalsIgnoreCase(fin)));
 
 	}
 
@@ -49,10 +51,15 @@ public class Ej20 {
 
 				break;
 			default:
+				System.out.println("La palabra no tiene vocales");
 				break;
 			}
 		}
 
-		System.out.println("La palabra es "+ palabra "y la vocal a se repite " +contadorA+"veces");
+		System.out.println("La palabra es "+ palabra+ " y la vocal a se repite " +contadorA + " veces");
+		System.out.println("La vocal e se repite "+contadorE+" veces");
+		System.out.println("La vocal i se repite "+contadorI+" veces");
+		System.out.println("La vocal o se repite "+contadorO+" veces");
+		System.out.println("La vocal u se repite "+contadorU+" veces");
 	}
 }
