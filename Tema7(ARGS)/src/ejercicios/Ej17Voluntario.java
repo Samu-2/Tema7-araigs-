@@ -8,16 +8,16 @@ public class Ej17Voluntario {
 		Scanner sc = new Scanner(System.in);
 		String[] array = new String[3];
 
-		String palabra = "";
+		String menor = "";
 		String primeraLetra = "";
 		for (int i = 0; i < array.length; i++) {
 			System.out.println("Introduce una palabra");
 
 			array[i] = sc.nextLine();
 		}
-		arrayOrdenAlfabetico(array);
 
-		// pedirPalabras(array, sc);
+
+	System.out.println(OrdenAlfabetico(array, menor));	
 
 	}
 
@@ -32,16 +32,21 @@ public class Ej17Voluntario {
 		}
 	}
 
-	public static String[] arrayOrdenAlfabetico(String[] array) {
+	public static String OrdenAlfabetico(String[] array,String men) {
 		
-		String[] array2  = new String[array.length];
 
-		String palabra="";
+
+	String	 menor=array[0];
 		
-		for (int i = 0; i < array.length; i++) {
-		array2[array.length].compareToIgnoreCase(array[i]);
+		for (int i = 1; i < array.length-1; i++) {
+			/*for(int j=2;i<array.length;i++) {
+				
+			}*/
+		if(array[i].compareToIgnoreCase(men)>0 && menor.compareToIgnoreCase(array[i])>0) {
+			menor=array[i];
+		}
 	}
-	return array2;
+return menor;
 	}
 
 	public static void pedirPalabras(String[] array, Scanner sc) {

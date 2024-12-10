@@ -10,6 +10,7 @@ public class Ej16 {
 		String[] arrayString = new String[sizeArray];
 
 			pedirPalabras(arrayString, sc);
+			completarPalabras(arrayString);
 		}
 	
 

@@ -50,7 +50,8 @@ public class Ej20 {
 				contadorU++;
 
 				break;
-			default:
+				default:
+	
 				System.out.println("La palabra no tiene vocales");
 				break;
 			}
